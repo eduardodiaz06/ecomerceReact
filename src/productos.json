@@ -1,10 +1,4 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import '../components/ItemListContainer.css';
-
-
-const data = [
+[
     {
         "id":1,
         "nombre":"Taladro",
@@ -51,38 +45,3 @@ const data = [
         "image":"https://aco.cl/imagenes/productos/034856.jpg"
     }
     ]
-
-
-const ItemListContainer = () => {
-    return (
-
-        <div class="flex-container">
-            {data.map((data, id) => {
-                return (
-                    <div class="cards" key={id}>
-                        <Card style={{ width: '20rem' }}>
-                            <Card.Img variant="top" src={data.image} />
-                            <Card.Body>
-                                <Card.Title>{data.nombre}</Card.Title>
-                                <Card.Text>
-                                    {data.descripcion}
-                                </Card.Text>
-                                <Card.Text class="precio">
-                                    {"$ " + data.precio}
-                                </Card.Text>
-                                <Button variant="primary">Ver Detalle</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                );
-            })}
-        </div>
-
-
-    );
-
-
-
-}
-
-export default ItemListContainer;

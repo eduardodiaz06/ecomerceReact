@@ -1,0 +1,10 @@
+.barra{
+    font-size: 25px;
+    text-decoration: none;
+    color:gray;;
+
+}
+
+.barra:hover {
+    color: aliceblue;
+}
