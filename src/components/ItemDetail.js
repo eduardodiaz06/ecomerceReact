@@ -28,8 +28,8 @@ const ItemDetail = () => {
                             <><Card style={{ width: '30rem' }}>
                                 <Card.Img variant="top" src={data.image} />
                                 <h1 >{data.nombre}</h1>
-                                <p>$ {data.descripcion}</p>
-                                <p>$ {data.precio}</p>
+                                <p>{data.descripcion}</p>
+                                <p class="precio">$ {data.precio}</p>
                                 <button>-</button>
                                 <label>1</label>
                                 <button>+</button>
